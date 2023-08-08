@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" type="text/css" href="/src/store-2/store-2.css" />
+    <script src="/src/store-2/store-2.js" defer></script>
+
+    <link rel="icon" href="/img/horus-favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/horus-favicon.png" type="image/x-icon">
+    
+    <title>Horus - Order Review</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/index.html" ><span><img src="/img/horus-logo-navbar.png" alt="Horus logo"></span></a></li>
+                <li><a href="#">Software</a></li>
+                <li><a href="#">The Scanner</a></li>
+                <li><a href="/pages/store.html" >Store</a></li>
+                <li><a href="#">Appointment</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="secondary-hero">
+            <h3>Order Review</h3>
+            <section class="secondary-hero-row">
+                <div class="secondary-hero-main-block">
+                    <h4>Match 3D Software</h4> <!--changes with the JS from store-->
+                    <p>9,500€</p> <!--changes with the JS from store-->  
+                    <p>Complete license - 1 user - 5GB Cloud Storage</p>    
+                </div>
+                <a href="/pages/store.html"><span class="material-symbols-outlined">chevron_left</span>  </a>         
+            </section>
+        </section>
+        <section class="payment">
+            <h4>Payment</h4>
+            <p>Step 3 <span>of 3</span></p>
+            <section class="payment-row">
+                <section class="payment-details-container">
+                </section>
+                <section class="billing-adress-container">
+                    <h3>Billing Address</h3> <!--API CALL don't forget-->                    
+                    <form action="/action_page.php">
+                        <div>
+                            <label for="fname"> First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="John">
+                            <label for="fname"> Last Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Doe">
+                        </div>
+                        <div>
+                            <label for="email"> Email</label>
+                            <input type="text" id="email" name="email" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label for="adr">Street Address</label>
+                            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                        </div>
+                        <div>
+                            <label for="state">State/Province</label>
+                            <input type="text" id="state" name="state" placeholder="Los Angeles">
+                            <label for="city"> City</label>
+                            <input type="text" id="city" name="city" placeholder="San Rose">                                
+                        </div>
+                        <div>
+                            <label for="zip">Zip/ Postal Code</label>
+                            <input type="text" id="zip" name="zip" placeholder="22341">
+                            <label for="phone">Phone number</label>
+                            <input type="text" id="phone" name="phone" placeholder="+351 000-0000"> <!--DON'T FORGET AREA CODES-->
+                        </div>
+                    </form>
+                </section>
+            </section>
+            <section class="btn">
+                <section class="btn-row">
+                    <a href="/pages/store.html"><button class="btn">Back</button></a>
+                    <a href="/pages/store-3.html"><button class="btn">Continue</button></a>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <img src="/img/horus-logo-footer.png" alt="Horus logo in gold">
+        <ul>
+            <li><a href="#">Software</a></li>
+            <li><a href="#">The Scanner</a></li>
+            <li><a href="/pages/store.html" >Store</a></li>
+            <li><a href="#">Appointment</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <hr>
+        <p>© 2021 Flex. All rights reserved.</p>
+    </footer>   
+</body>
