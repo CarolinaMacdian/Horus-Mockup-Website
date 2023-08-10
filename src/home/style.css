@@ -56,7 +56,24 @@
 
 /*Navbar*/
 
-/*component*/
+body {
+  background-color: var(--primary);
+  font-family: var(--typography-1);
+}
+
+/*footer-homepage*/
+.boxes {
+  top: 1099px;
+  left: -1px;
+  padding: 0px 3.5px 49px 2.5px;
+  border-radius: 60px 60px 0px 0px;
+  background-color: var(--message-modal);
+}
+
+.boxes-row {
+  display: flex;
+  justify-content: space-between;
+}
 
 .boxes-container {
   width: Fixed (283px);
@@ -67,4 +84,26 @@
   box-shadow: var(--high-shadow);
   background: var(--primary);
   color: var(--text);
+  flex: 1;
+  padding: 20px;
+  margin: 0.5%;
+  text-align: center;
+}
+
+.boxes-container h5 {
+  font-size: 24px;
+  font-weight: var(--body-1-bold-font-weight);
+  line-height: 29.26px;
+}
+
+.boxes-container p {
+  font-size: var(--body-1-default-font-size);
+  font-weight: var(--body-1-default-font-weight);
+  line-height: 19.5px;
+}
+
+.icon {
+  font-size: 135px;
+  gap: 20px;
+  color: var(--button);
 }
