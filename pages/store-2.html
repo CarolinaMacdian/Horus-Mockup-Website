@@ -45,30 +45,27 @@
             <section class="payment-row">
                 <section class="payment-details-container">
                     <h3>Payment Details</h3>
-                    <section class="pay-credit-card">
-                        <div class="card-information">
-                            <input type="radio" id="payCC" name="payCC" value="PayCCoption">
-                            <label for="payCC"> Pay with Credit Card</label>                            
-                        </div>
-                        <span class="icon-container">
-                            <span class="material-symbols-outlined" style="color:navy;">credit_card</span>
-                            <span class="material-symbols-outlined" style="color:blue;">credit_card</span>
-                            <span class="material-symbols-outlined" style="color:red;">credit_card</span>
-                            <span class="material-symbols-outlined" style="color:orange;">credit_card</span>
-                        </span>
-                        <div>
-                            <label for="cname">Name on Card</label>
-                            <input type="text" id="cname" name="cardname" placeholder="Olivia Rhye">
-                            <label for="expiry">Expiry</label>
-                            <input type="text" id="expiry" name="expiry" placeholder="06/2024">
-                        </div>
-                        <div>
-                            <label for="ccnum">Credit card number</label>
-                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                            <label for="cvv">CVV</label>
-                            <input type="text" id="cvv" name="cvv" placeholder="352">
-                        </div>
-                    </section>
+                    <form action="#" method="post">
+                        <section>
+                            <label for="cc-name">Name on card</label>
+                            <input id="cc-name" name="cc-name" autocomplete="cc-name" pattern="[\p{L} \-\.]+" required>
+                        </section> 
+                        <section id="cc-exp-csc">
+                            <div>
+                                <label for="cc-exp">Expiry</label>
+                                <input id="cc-exp" name="cc-exp" autocomplete="cc-exp" placeholder="MM/YY" maxlength="5" required>
+                            </div>                                               
+                        <section>
+                            <div>
+                            <label for="cc-number">Card number</label>
+                            <input id="cc-number" name="cc-number" autocomplete="cc-number" inputmode="numeric" pattern="[\d ]{10,30}" required>
+                            </div>
+                            <div>
+                                <label for="cc-csc">Security code</label>
+                                <input id="cc-csc" name="cc-csc" autocomplete="cc-csc" inputmode="numeric" maxlength="3" required>     
+                            </div>                  
+                        </section>
+                    </form>
                 </section>
                 <section class="billing-adress-container">
                     <h3>Billing Address</h3> <!--API CALL don't forget-->                    
@@ -111,7 +108,7 @@
             <section class="btn">
                 <section class="btn-row">
                     <a href="/pages/store.html"><button class="btn">Back</button></a>
-                    <a href="/pages/store-3.html"><button class="btn">Continue</button></a>
+                    <a href="/pages/store-3.html"><button class="btn" id="complete-payment">Buy</button></a>
                 </section>
             </section>
         </section>
