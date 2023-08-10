@@ -39,11 +39,36 @@
                 <a href="/pages/store.html"><span class="material-symbols-outlined">chevron_left</span>  </a>         
             </section>
         </section>
-        <section class="payment">
+        <section class="payment"> <!--integrate third-party payment gateways or APIs to handle payment processing securely-->
             <h4>Payment</h4>
             <p>Step 3 <span>of 3</span></p>
             <section class="payment-row">
                 <section class="payment-details-container">
+                    <h3>Payment Details</h3>
+                    <section class="pay-credit-card">
+                        <div class="card-information">
+                            <input type="radio" id="payCC" name="payCC" value="PayCCoption">
+                            <label for="payCC"> Pay with Credit Card</label>                            
+                        </div>
+                        <span class="icon-container">
+                            <span class="material-symbols-outlined" style="color:navy;">credit_card</span>
+                            <span class="material-symbols-outlined" style="color:blue;">credit_card</span>
+                            <span class="material-symbols-outlined" style="color:red;">credit_card</span>
+                            <span class="material-symbols-outlined" style="color:orange;">credit_card</span>
+                        </span>
+                        <div>
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="Olivia Rhye">
+                            <label for="expiry">Expiry</label>
+                            <input type="text" id="expiry" name="expiry" placeholder="06/2024">
+                        </div>
+                        <div>
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="352">
+                        </div>
+                    </section>
                 </section>
                 <section class="billing-adress-container">
                     <h3>Billing Address</h3> <!--API CALL don't forget-->                    
@@ -75,6 +100,12 @@
                             <input type="text" id="phone" name="phone" placeholder="+351 000-0000"> <!--DON'T FORGET AREA CODES-->
                         </div>
                     </form>
+                    <div>
+                       <input type="checkbox" id="samebill" name="samebill" value="sameadress">
+                       <label for="samebill"> My billing and shipping adress are the same</label><br>
+                       <input type="checkbox" id="createaccount" name="createaccount" value="10%discount">
+                       <label for="createaccount"> Create an account for 10% off this purchase</label>
+                    </div>
                 </section>
             </section>
             <section class="btn">
