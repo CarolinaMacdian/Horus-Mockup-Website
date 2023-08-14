@@ -2,7 +2,7 @@
 
 :root {
   /* Colors */
-  --primary: #141215;
+  --primary: #0a0909;
   --button: #ffb03c;
   --text-2: #141215;
   --text: #ffffff;
@@ -55,6 +55,7 @@
 /*Media queries to make the page responsive*/
 
 @media screen and (max-width: 600px) {
+  /*Navbar*/
   .navbar a:not(:first-child) {
     display: none;
   }
@@ -82,13 +83,51 @@
     display: block;
     text-align: left;
   }
+
+  /*Main*/
+
+  .hero {
+    padding: 159px 20px 15px 20px;
+  }
+
+  .hero::before {
+    width: 100%;
+    height: 50%;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .btn {
+    width: 100%;
+    height: auto;
+    padding: 10px 5px;
+    border-radius: 5px;
+  }
+
+  .btn-text {
+    font-size: 14px;
+  }
+
+  .icon-link-store {
+    font-size: 14px;
+    width: auto;
+    height: auto;
+  }
 }
+/*Desktop version*/
 
 /*Background*/
 
 body {
   background-color: var(--primary);
   font-family: var(--typography-1);
+  margin: 0%;
 }
 
 /*Navbar*/
@@ -124,4 +163,112 @@ body {
 
 .navbar .icon-navbar {
   display: none;
+}
+
+/*hero*/
+
+.hero-store-3 {
+  font-family: var(--typography-1);
+  padding: 318px 332px 318px 332px;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-store-3::before {
+  content: '';
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/img/store-3/3D-Computer-3.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-store-3-content {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-store-3 h2 {
+  font-size: var(--h1-heading-font-size);
+  font-weight: var(--large-title-font-weight);
+  color: var(--text);
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.hero-store-3 p {
+  font-size: var(--h3-heading-font-size);
+  font-weight: var(--body-1-default-font-weight);
+  color: var(--text);
+  text-align: center;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  color: var(--primary);
+  background-color: var(--button);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  width: 476px;
+  height: 80px;
+  padding: 14px 10px 10px 20px;
+  border-radius: 12px;
+  gap: 16px;
+}
+
+.btn-text {
+  font-family: var(--typography-1);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #cf8b24;
+}
+
+.icon-link-store {
+  margin-left: 5px;
+  font-size: 24px;
+  width: 50px;
+  height: 32px;
+}
+
+.svg-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Allows clicks to go through the SVGs */
+}
+
+.svg-bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 26%;
+  height: auto;
+}
+
+.svg-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10%;
+  height: auto;
 }

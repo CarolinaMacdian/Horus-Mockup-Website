@@ -2,7 +2,7 @@
 
 :root {
   /* Colors */
-  --primary: #141215;
+  --primary: #0a0909;
   --button: #ffb03c;
   --text-2: #141215;
   --text: #ffffff;
@@ -87,7 +87,7 @@
   /*Main*/
 
   .hero {
-    padding: 159px 20px 15px 20px; /* Adjust the padding as needed */
+    padding: 159px 20px 15px 20px;
   }
 
   .hero::before {
@@ -151,12 +151,14 @@
     font-size: 14px;
   }
 }
+/*Desktop version*/
 
 /*Background*/
 
 body {
   background-color: var(--primary);
   font-family: var(--typography-1);
+  margin: 0%;
 }
 
 /*Navbar*/
@@ -201,11 +203,13 @@ body {
   padding: 318px 332px 318px 332px;
   gap: 10px;
   position: relative;
+  overflow: hidden;
 }
 
 .hero::before {
   content: '';
-  background-image: url('/img/home/3D-Computer-2-1.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/img/home/3D-Computer-2-1.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -322,4 +326,21 @@ body {
   font-size: 135px;
   gap: 20px;
   color: var(--button);
+}
+
+.svg-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Allows clicks to go through the SVGs */
+}
+
+.svg-bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 26%;
+  height: auto;
 }
