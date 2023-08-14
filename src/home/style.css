@@ -54,7 +54,7 @@
 
 /*Media queries to make the page responsive*/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
   /*Navbar*/
   .navbar a:not(:first-child) {
     display: none;
@@ -85,6 +85,40 @@
   }
 
   /*Main*/
+
+  .hero {
+    padding: 159px 20px 15px 20px; /* Adjust the padding as needed */
+  }
+
+  .hero::before {
+    width: 100%;
+    height: 50%;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .btn {
+    width: 100%;
+    height: auto;
+    padding: 10px 5px;
+    border-radius: 5px;
+  }
+
+  .btn-text {
+    font-size: 14px;
+  }
+
+  .icon-link-store {
+    font-size: 14px;
+    width: auto;
+    height: auto;
+  }
 
   /*Footer*/
 
