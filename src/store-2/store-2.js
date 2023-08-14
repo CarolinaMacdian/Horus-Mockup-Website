@@ -1,8 +1,20 @@
 /**
+ * Navigation Hamburguer
+ * @format
+ * */
+
+function myFunction() {
+  var x = document.getElementById('horusNavbar');
+  if (x.className === 'navbar') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'navbar';
+  }
+}
+
+/**
  * Copyright 2020 Google LLC.
  * SPDX-License-Identifier: Apache-2.0
- *
- * @format
  */
 
 const form = document.querySelector('form');
