@@ -89,18 +89,23 @@
 body {
   background-color: var(--primary);
   font-family: var(--typography-1);
+  margin: 0 auto;
 }
 
 /*Navbar*/
+
+header {
+  border-bottom: 1px solid var(--text);
+}
 
 .navbar {
   background-color: var(--primary);
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  border-bottom: 1px solid var(--text);
+  align-items: left;
+  padding: 25px 20px 10px 20px;
+  margin: 0px 40px 0px 40px;
 }
 
 .navbar a {
@@ -116,6 +121,14 @@ body {
   color: var(--button);
 }
 
+.navbar a.active {
+  font-weight: bold;
+}
+
+.bold-link {
+  font-weight: bold;
+}
+
 .navbar-image {
   width: 30px;
   margin: 0px;
@@ -124,4 +137,103 @@ body {
 
 .navbar .icon-navbar {
   display: none;
+}
+
+/*secondary-hero*/
+
+.secondary-hero {
+  display: flex;
+  align-items: center;
+  font-family: var(--typography-1);
+  width: 100%;
+  height: 382px;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.secondary-hero::before {
+  content: '';
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/img/store/softawes-1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.secondary-hero-content {
+  flex: 1;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.secondary-hero h3 {
+  font-size: var(--large-title-font-size);
+  font-weight: var(--large-title-font-weight);
+  color: var(--text);
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: capitalize;
+  line-height: 59px;
+  margin-left: 120px;
+}
+
+.secondary-hero p {
+  font-size: var(--h3-heading-font-size);
+  font-weight: var(--h2-heading-font-weight);
+  color: var(--text);
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 120px;
+  text-transform: capitalize;
+  line-height: 24px;
+}
+
+.btn {
+  display: inline-block;
+  color: var(--primary);
+  background-color: var(--button);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  width: 183px;
+  height: 72px;
+  padding: 24px 10px 24px 10px;
+  border-radius: 12px;
+  gap: 16px;
+  box-shadow: 2px 4px 20px 0px #d6c21166;
+  margin: 15px 0px 80px 120px;
+}
+
+.btn-text {
+  font-family: var(--typography-1);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #cf8b24;
+}
+
+.arrows {
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.arrows span {
+  font-size: 40px;
+  color: #fff;
+  margin: 20px;
 }
