@@ -24,27 +24,41 @@
 </head>
 <body>
     <header>
-      <nav class="navbar" id="horusNavbar">
-        <a><img class="navbar-image" src="/img/horus-logo-navbar.png" alt="Horus logo"/></a>
-          <a href="/index.html">Software</a>
-          <a href="#">The Scanner</a>
-          <a href="/pages/store.html">Store</a>
-          <a href="#">Appointment</a>
-          <a href="#">contact</a>
-        <a href="javascript:void(0);" class="icon-navbar" onclick="myFunction()"><span class="material-symbols-outlined">menu</span></a> 
+      <nav
+        class="navbar"
+        id="horusNavbar">
+        <a
+          ><img
+            class="navbar-image"
+            src="/img/horus-logo-navbar.png"
+            alt="Horus logo"
+        /></a>
+        <a href="/index.html">Software</a>
+        <a href="#">The Scanner</a>
+        <a href="/pages/store.html">Store</a>
+        <a href="#">Appointment</a>
+        <a href="#">contact</a>
+        <a
+          href="javascript:void(0);"
+          class="icon-navbar"
+          onclick="myFunction()"
+          ><span class="material-symbols-outlined">menu</span></a
+        >
       </nav>
     </header>
     <main>
-        <section class="secondary-hero">
-            <h3>Order Review</h3>
-            <section class="secondary-hero-row">
-                <div class="secondary-hero-main-block">
-                    <h4>Match 3D Software</h4> <!--changes with the JS from store-->
-                    <p>9,500€</p> <!--changes with the JS from store-->  
-                    <p>Complete license - 1 user - 5GB Cloud Storage</p>    
-                </div>
-                <a href="/pages/store.html"><span class="material-symbols-outlined">chevron_left</span>  </a>         
-            </section>
+        <section class="secondary-hero">            
+            <div class="arrow-left">
+                <span class="material-symbols-outlined">chevron_left</span>        
+            </div> 
+            <div class="secondary-hero-content">
+                <h3>Order Review</h3>
+                <div class="secondary-hero-text">
+                    <span class="match-software">Match 3D Software</span> <!--changes with the JS from store-->
+                    <span class="money-value">9,500€</span> <!--changes with the JS from store-->  
+                </div>   
+                <p>Complete license - 1 user - 5GB Cloud Storage</p>    
+            </div>
         </section>
         <section class="payment"> <!--integrate third-party payment gateways or APIs to handle payment processing securely-->
             <h4>Payment</h4>
@@ -112,10 +126,10 @@
                     </div>
                 </section>
             </section>
-            <section class="btn">
-                <section class="btn-row">
-                    <a href="/pages/store.html"><button class="btn">Back</button></a>
-                    <a href="/pages/store-3.html"><button class="btn" id="complete-payment">Buy</button></a>
+            <section class="btn-buy-out">
+                <section class="btn-buy-out-row">
+                    <a href="/pages/store.html"><button class="btn-buy-out-back">Back</button></a>
+                    <a href="/pages/store-3.html"><button class="btn-buy-out-complete" id="complete-payment">Buy</button></a>
                 </section>
             </section>
         </section>
