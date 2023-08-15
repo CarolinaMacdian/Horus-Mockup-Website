@@ -1,149 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;700&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="path/to/bootstrap.min.css"/>
-    <script src="path/to/bootstrap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+        <link rel="stylesheet" href="path/to/bootstrap.min.css"/>
+        <script src="path/to/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="/src/store-2/store-2.css" />
-    <script src="/src/store-2/store-2.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="/src/store-2/store-2.css" />
+        <script src="/src/store-2/store-2.js" defer></script>
 
-    <link rel="icon" href="/img/horus-favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="/img/horus-favicon.png" type="image/x-icon">
-    
-    <title>Horus - Order Review</title>
-</head>
-<body>
-    <header>
-      <nav
-        class="navbar"
-        id="horusNavbar">
-        <a
-          ><img
-            class="navbar-image"
-            src="/img/horus-logo-navbar.png"
-            alt="Horus logo"
-        /></a>
-        <a href="/index.html">Software</a>
-        <a href="#">The Scanner</a>
-        <a href="/pages/store.html">Store</a>
-        <a href="#">Appointment</a>
-        <a href="#">contact</a>
-        <a
-          href="javascript:void(0);"
-          class="icon-navbar"
-          onclick="myFunction()"
-          ><span class="material-symbols-outlined">menu</span></a
-        >
-      </nav>
-    </header>
-    <main>
-        <section class="secondary-hero">            
-            <div class="arrow-left">
-                <span class="material-symbols-outlined">chevron_left</span>        
-            </div> 
-            <div class="secondary-hero-content">
-                <h3>Order Review</h3>
-                <div class="secondary-hero-text">
-                    <span class="match-software">Match 3D Software</span> <!--changes with the JS from store-->
-                    <span class="money-value">9,500€</span> <!--changes with the JS from store-->  
-                </div>   
-                <p>Complete license - 1 user - 5GB Cloud Storage</p>    
-            </div>
-        </section>
-        <section class="payment"> <!--integrate third-party payment gateways or APIs to handle payment processing securely-->
-            <h4>Payment</h4>
-            <p>Step 3 <span>of 3</span></p>
-            <section class="payment-row">
-                <section class="payment-details-container">
-                    <h3>Payment Details</h3>
-                    <form action="#" method="post">
-                        <section>
-                            <label for="cc-name">Name on card</label>
-                            <input id="cc-name" name="cc-name" autocomplete="cc-name" pattern="[\p{L} \-\.]+" required>
-                        </section> 
-                        <section id="cc-exp-csc">
+        <link rel="icon" href="/img/horus-favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="/img/horus-favicon.png" type="image/x-icon">
+        
+        <title>Horus - Order Review</title>
+    </head>
+    <body>
+        <header>
+        <nav
+            class="navbar"
+            id="horusNavbar">
+            <a
+            ><img
+                class="navbar-image"
+                src="/img/horus-logo-navbar.png"
+                alt="Horus logo"
+            /></a>
+            <a href="/index.html">Software</a>
+            <a href="#">The Scanner</a>
+            <a href="/pages/store.html">Store</a>
+            <a href="#">Appointment</a>
+            <a href="#">contact</a>
+            <a
+            href="javascript:void(0);"
+            class="icon-navbar"
+            onclick="myFunction()"
+            ><span class="material-symbols-outlined">menu</span></a
+            >
+        </nav>
+        </header>
+        <main>
+            <section class="secondary-hero">            
+                <div class="arrow-left">
+                    <span class="material-symbols-outlined">chevron_left</span>        
+                </div> 
+                <div class="secondary-hero-content">
+                    <h3>Order Review</h3>
+                    <div class="secondary-hero-text">
+                        <span class="match-software">Match 3D Software</span> <!--changes with the JS from store-->
+                        <span class="money-value">9,500€</span> <!--changes with the JS from store-->  
+                    </div>   
+                    <p>Complete license - 1 user - 5GB Cloud Storage</p>    
+                </div>
+            </section>
+            <section class="payment"> <!--integrate third-party payment gateways or APIs to handle payment processing securely-->
+                <h4>Payment</h4>
+                <p>Step 3 <span>of 3</span></p>
+                <section class="payment-row">
+                    <section class="payment-details-container">
+                        <h3>Payment Details</h3>
+                        <form action="#" method="post">
+                            <section>
+                                <label for="cc-name">Name on card</label>
+                                <input id="cc-name" name="cc-name" autocomplete="cc-name" pattern="[\p{L} \-\.]+" required>
+                            </section> 
+                            <section id="cc-exp-csc">
+                                <div>
+                                    <label for="cc-exp">Expiry</label>
+                                    <input id="cc-exp" name="cc-exp" autocomplete="cc-exp" placeholder="MM/YY" maxlength="5" required>
+                                </div>                                               
+                            <section>
+                                <div>
+                                <label for="cc-number">Card number</label>
+                                <input id="cc-number" name="cc-number" autocomplete="cc-number" inputmode="numeric" pattern="[\d ]{10,30}" required>
+                                </div>
+                                <div>
+                                    <label for="cc-csc">Security code</label>
+                                    <input id="cc-csc" name="cc-csc" autocomplete="cc-csc" inputmode="numeric" maxlength="3" required>     
+                                </div>                  
+                            </section>
+                        </form>
+                    </section>
+                    <section class="billing-adress-container">
+                        <h3>Billing Address</h3> <!--API CALL don't forget-->                    
+                        <form action="/action_page.php">
                             <div>
-                                <label for="cc-exp">Expiry</label>
-                                <input id="cc-exp" name="cc-exp" autocomplete="cc-exp" placeholder="MM/YY" maxlength="5" required>
-                            </div>                                               
-                        <section>
-                            <div>
-                            <label for="cc-number">Card number</label>
-                            <input id="cc-number" name="cc-number" autocomplete="cc-number" inputmode="numeric" pattern="[\d ]{10,30}" required>
+                                <label for="fname"> First Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Max">
+                                <label for="lname"> Last Name</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Luca">
                             </div>
                             <div>
-                                <label for="cc-csc">Security code</label>
-                                <input id="cc-csc" name="cc-csc" autocomplete="cc-csc" inputmode="numeric" maxlength="3" required>     
-                            </div>                  
-                        </section>
-                    </form>
+                                <label for="email"> Email</label>
+                                <input type="text" id="email" name="email" placeholder="max.luca@gmail.com">
+                            </div>
+                            <div>
+                                <label for="adr">Street Address</label>
+                                <input type="text" id="adr" name="address" placeholder="   ">
+                            </div>
+                            <div>
+                                <label for="state">State/Province</label>
+                                <input type="text" id="state" name="state" placeholder="Los Angeles">
+                                <label for="city"> City</label>
+                                <input type="text" id="city" name="city" placeholder="San Rose">                                
+                            </div>
+                            <div>
+                                <label for="zip">Zip/ Postal Code</label>
+                                <input type="text" id="zip" name="zip" placeholder="22341">
+                                <label for="phone">Phone number</label>
+                                <input type="text" id="phone" name="phone" placeholder="+351 000-0000"> <!--DON'T FORGET AREA CODES-->
+                            </div>
+                        </form>
+                        <div>
+                        <input type="checkbox" id="samebill" name="samebill" value="sameadress">
+                        <label for="samebill"> My billing and shipping adress are the same</label><br>
+                        <input type="checkbox" id="createaccount" name="createaccount" value="10%discount">
+                        <label for="createaccount"> Create an account for 10% off this purchase</label>
+                        </div>
+                    </section>
                 </section>
-                <section class="billing-adress-container">
-                    <h3>Billing Address</h3> <!--API CALL don't forget-->                    
-                    <form action="/action_page.php">
-                        <div>
-                            <label for="fname"> First Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Max">
-                            <label for="lname"> Last Name</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Luca">
-                        </div>
-                        <div>
-                            <label for="email"> Email</label>
-                            <input type="text" id="email" name="email" placeholder="max.luca@gmail.com">
-                        </div>
-                        <div>
-                            <label for="adr">Street Address</label>
-                            <input type="text" id="adr" name="address" placeholder="   ">
-                        </div>
-                        <div>
-                            <label for="state">State/Province</label>
-                            <input type="text" id="state" name="state" placeholder="Los Angeles">
-                            <label for="city"> City</label>
-                            <input type="text" id="city" name="city" placeholder="San Rose">                                
-                        </div>
-                        <div>
-                            <label for="zip">Zip/ Postal Code</label>
-                            <input type="text" id="zip" name="zip" placeholder="22341">
-                            <label for="phone">Phone number</label>
-                            <input type="text" id="phone" name="phone" placeholder="+351 000-0000"> <!--DON'T FORGET AREA CODES-->
-                        </div>
-                    </form>
-                    <div>
-                       <input type="checkbox" id="samebill" name="samebill" value="sameadress">
-                       <label for="samebill"> My billing and shipping adress are the same</label><br>
-                       <input type="checkbox" id="createaccount" name="createaccount" value="10%discount">
-                       <label for="createaccount"> Create an account for 10% off this purchase</label>
-                    </div>
+                <section class="btn-buy-out">
+                    <section class="btn-buy-out-row">
+                        <a href="/pages/store.html"><button class="btn-buy-out-back">Back</button></a>
+                        <a href="/pages/store-3.html"><button class="btn-buy-out-complete" id="complete-payment">Buy</button></a>
+                    </section>
                 </section>
             </section>
-            <section class="btn-buy-out">
-                <section class="btn-buy-out-row">
-                    <a href="/pages/store.html"><button class="btn-buy-out-back">Back</button></a>
-                    <a href="/pages/store-3.html"><button class="btn-buy-out-complete" id="complete-payment">Buy</button></a>
-                </section>
-            </section>
-        </section>
-    </main>
-    <footer>
-        <img src="/img/horus-logo-footer.png" alt="Horus logo in gold">
-        <ul>
-            <li><a href="#">Software</a></li>
-            <li><a href="#">The Scanner</a></li>
-            <li><a href="/pages/store.html" >Store</a></li>
-            <li><a href="#">Appointment</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <hr>
-        <p>© 2021 Flex. All rights reserved.</p>
-    </footer>   
-</body>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-img">
+                    <img
+                    src="/img/horus-logo-footer.png"
+                    alt="Horus logo in gold" />
+                </div>
+                <div class="footer-options">
+                    <span class="footer-option"><a href="#">Software</a></span>
+                    <span class="footer-option"><a href="#">The Scanner</a></span>
+                    <span class="footer-option"><a href="/pages/store.html">Store</a></span>
+                    <span class="footer-option"><a href="#">Appointment</a></span>
+                    <span class="footer-option"><a href="#">Contact</a></span>
+                </div>
+                <div class="footer-rights">
+                    <p>© 2021 Flex. All rights reserved.</p>
+                </div>
+            </div>
+        </footer> 
+    </body>
+</html>

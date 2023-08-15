@@ -13,7 +13,7 @@
   /* Font face, sizes and weights */
   --typography-1: 'Montserrat', sans-serif;
   --typography-2: 'Lato', sans-serif;
-  --navbar-font-size: 15px;
+  --navbar-font-size: 24px;
   --navbar-font-weight: 400;
   --large-title-font-size: 48px;
   --large-title-font-weight: 700;
@@ -103,8 +103,8 @@ header {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  align-items: left;
-  padding: 25px 20px 10px 20px;
+  align-items: center;
+  padding: 25px 20px 20px 20px;
   margin: 0px 40px 0px 40px;
 }
 
@@ -130,7 +130,7 @@ header {
 }
 
 .navbar-image {
-  width: 30px;
+  width: 72px;
   margin: 0px;
   padding: 0 auto;
 }
@@ -236,4 +236,33 @@ header {
   font-size: 40px;
   color: #fff;
   margin: 20px;
+}
+
+/*Footer*/
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-img img {
+  width: 42.985076904296875px;
+  height: 40px;
+}
+
+.footer-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.footer-option {
+  margin: 0 10px;
+}
+
+.footer-rights {
+  text-align: center;
 }

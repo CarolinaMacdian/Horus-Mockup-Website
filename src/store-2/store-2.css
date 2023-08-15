@@ -13,7 +13,7 @@
   /* Font face, sizes and weights */
   --typography-1: 'Montserrat', sans-serif;
   --typography-2: 'Lato', sans-serif;
-  --navbar-font-size: 15px;
+  --navbar-font-size: 24px;
   --navbar-font-weight: 400;
   --large-title-font-size: 48px;
   --large-title-font-weight: 700;
@@ -104,7 +104,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 20px 10px 20px;
+  padding: 25px 20px 20px 20px;
   margin: 0px 40px 0px 40px;
 }
 .navbar a {
@@ -129,7 +129,7 @@ header {
 }
 
 .navbar-image {
-  width: 30px;
+  width: 72px;
   margin: 0px;
   padding: 0 auto;
 }
@@ -226,4 +226,39 @@ header {
   font-size: 40px;
   color: #fff;
   margin: 20px;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Example background color */
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-img img {
+  max-width: 100%;
+}
+
+.footer-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.footer-option {
+  margin: 0 10px;
+}
+
+.footer-rights {
+  text-align: center;
 }

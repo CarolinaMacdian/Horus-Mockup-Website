@@ -13,7 +13,7 @@
   /* Font face, sizes and weights */
   --typography-1: 'Montserrat', sans-serif;
   --typography-2: 'Lato', sans-serif;
-  --navbar-font-size: 15px;
+  --navbar-font-size: 24px;
   --navbar-font-weight: 400;
   --large-title-font-size: 48px;
   --large-title-font-weight: 700;
@@ -173,7 +173,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 20px 10px 20px;
+  padding: 25px 20px 20px 20px;
   margin: 0px 40px 0px 40px;
 }
 
@@ -199,7 +199,7 @@ header {
 }
 
 .navbar-image {
-  width: 30px;
+  width: 72px;
   margin: 0px;
   padding: 0 auto;
 }
@@ -346,7 +346,7 @@ footer {
 .icon {
   font-size: 135px;
   gap: 20px;
-  color: var(--button);
+  color: #a18009;
 }
 
 .svg-container {
