@@ -54,6 +54,7 @@
 
 /*Media queries to make the page responsive*/
 
+/* Small screens */
 @media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {
     display: none;
@@ -84,7 +85,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .payment-row {
     flex-direction: column;
   }
@@ -239,7 +240,7 @@ header {
   margin: 20px;
 }
 
-/*Main*/
+/*Select Product*/
 
 .our-softwares {
   margin: 30px 120px 0px 120px;
@@ -285,6 +286,20 @@ header {
 
 /*Payment Info*/
 
+.form-section {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.payment-input-1,
+.payment-input-2 {
+  width: 100%;
+  padding: 10px;
+}
+
 .payment-container {
   margin: 30px 120px 80px 120px;
   display: flex;
@@ -293,11 +308,174 @@ header {
 
 .payment-details-container {
   flex: 1;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 591px;
+  height: 446.16px;
+  padding: 0px 0px 45px 32px;
+  border-radius: 24px;
+  background-color: var(--buy-card-background);
+  margin-right: 25px;
 }
+
+.payment-details-text {
+  font-size: var(--h3-heading-font-size);
+  font-weight: var(--h3-heading-font-weight);
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--text);
+}
+
+.payment-details-form {
+  width: 527px;
+  height: 160px;
+  padding: 12.451443672180176px;
+  border-radius: 6.225721836090088px;
+  border: 0.778215229511261px;
+  gap: 11.67322826385498px;
+  background-color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.payment-details-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.radio-credit-card {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.radio-circle {
+  margin-left: 5px;
+  font-size: var(--assistive-text-default-font-size);
+  font-weight: var(--assistive-text-default-font-weight);
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--text);
+}
+
+.credit-card-img {
+  width: 35.79790115356445px;
+  height: 24.90288734436035px;
+}
+
+.mode-pay {
+  width: 527px;
+  height: 56px;
+  padding: 12.451443672180176px;
+  border-radius: 6.225721836090088px;
+  border: 0.778215229511261px;
+  gap: 11.67322826385498px;
+  background: linear-gradient(0deg, #e4e7ec, #e4e7ec),
+    linear-gradient(0deg, #ffffff, #ffffff);
+  margin-bottom: 10px;
+}
+
+.mode-pay-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mode-pay-radio {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.mode-pay-radio-circle {
+  margin-left: 5px;
+}
+
+.mode-pay-text {
+  font-size: var(--body-2-default-font-size);
+  font-weight: var(--body-2-default-font-weight);
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.mode-pay-img {
+  width: 35.79790115356445px;
+  height: 24.90288734436035px;
+}
+
+.info-disclaimer {
+  width: 499.68px;
+  height: 18.85px;
+  gap: 11px;
+}
+
+.info-disclaimer-img {
+  left: 4.669189453125px;
+  width: 18.677165985107422px;
+  height: 18.533782958984375px;
+}
+
+.info-disclaimer-text {
+  font-size: var(--assistive-text-default-font-size);
+  font-weight: var(--assistive-text-default-font-weight);
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--text);
+  padding-left: 5px;
+}
+
+.payment-input-1 {
+  width: 350px;
+  height: 15px;
+  padding: 7.78215217590332px 10.895012855529785px 7.78215217590332px
+    10.895012855529785px;
+  border-radius: 6.225721836090088px;
+  border: 0.778215229511261px;
+  gap: 6.225721836090088px;
+}
+
+.payment-input-2 {
+  width: 87px;
+  height: 15px;
+  padding: 7.78215217590332px 10.895012855529785px 7.78215217590332px
+    10.895012855529785px;
+  border-radius: 6.225721836090088px;
+  border: 0.778215229511261px;
+  gap: 6.225721836090088px;
+}
+
+.billing-adress-container {
+  flex: 1;
+  width: 591px;
+  height: 446.16px;
+  padding: 0px 0px 45px 32px;
+  border-radius: 24px;
+  background-color: var(--buy-card-background);
+}
+
+.long-input {
+  margin-top: 2px;
+  width: 530.1px;
+  height: 14.5px;
+  padding: 7.75px 10.84999942779541px 7.75px 10.84999942779541px;
+  border-radius: 6.199999809265137px;
+  border: 0.7749999761581421px;
+  gap: 6.199999809265137px;
+}
+
+.short-input {
+  margin-top: 2px;
+  width: 248px;
+  height: 14.5px;
+  padding: 7.75px 10.84999942779541px 7.75px 10.84999942779541px;
+  border-radius: 6.199999809265137px;
+  border: 0.7749999761581421px;
+  gap: 6.199999809265137px;
+}
+
+/*Buttons*/
 
 .btn-buy {
   margin: 80px 120px 80px 0px;

@@ -99,121 +99,285 @@
             <h3>Payment Details</h3>
           </div>
           <section class="payment-details-form">
+            <div class="payment-details-header">
+              <label class="radio-credit-card">
+                <input
+                  type="radio"
+                  name="radio-group" />
+                <span class="radio-circle">Pay with Credit Card</span>
+              </label>
+              <span>
+                <img
+                  src="/img/store-2/visa.png"
+                  alt="visa credit card"
+                  class="credit-card-img" />
+                <img
+                  src="/img/store-2/stripe.png"
+                  alt="stipe credit card"
+                  class="credit-card-img" />
+                <img
+                  src="/img/store-2/mastercard.png"
+                  alt="mastercard credit card"
+                  class="credit-card-img" />
+              </span>
+            </div>
             <form
               action="#"
               method="post">
-              <section>
-                <label for="cc-name">Name on card</label>
-                <input
-                  id="cc-name"
-                  name="cc-name"
-                  autocomplete="cc-name"
-                  pattern="[\p{L} \-\.]+"
-                  required />
-              </section>
-              <section id="cc-exp-csc">
+              <section class="form-section">
                 <div>
-                  <label for="cc-exp">Expiry</label>
+                  <label
+                    for="cc-name"
+                    class="radio-circle">
+                    Name on card
+                  </label>
+                  <br />
+                  <input
+                    id="cc-name"
+                    name="cc-name"
+                    autocomplete="cc-name"
+                    class="payment-input-1"
+                    placeholder="Olivia Rhye"
+                    pattern="[\p{L} \-\.]+"
+                    required />
+                </div>
+                <div id="cc-exp-csc">
+                  <label
+                    for="cc-exp"
+                    class="radio-circle">
+                    Expiry
+                  </label>
+                  <br />
                   <input
                     id="cc-exp"
                     name="cc-exp"
                     autocomplete="cc-exp"
-                    placeholder="MM/YY"
-                    maxlength="5"
+                    class="payment-input-2"
+                    placeholder="06/2024"
+                    maxlength="7"
                     required />
                 </div>
               </section>
-              <section>
+              <section class="form-section">
                 <div>
-                  <label for="cc-number">Card number</label>
+                  <label
+                    for="cc-number"
+                    class="radio-circle">
+                    Card number
+                  </label>
+                  <br />
                   <input
                     id="cc-number"
                     name="cc-number"
                     autocomplete="cc-number"
+                    placeholder="1234 1234 1234 1234"
+                    class="payment-input-1"
                     inputmode="numeric"
                     pattern="[\d ]{10,30}"
                     required />
                 </div>
                 <div>
-                  <label for="cc-csc">Security code</label>
+                  <label
+                    for="cc-csc"
+                    class="radio-circle">
+                    Security code
+                  </label>
+                  <br />
                   <input
                     id="cc-csc"
                     name="cc-csc"
                     autocomplete="cc-csc"
                     inputmode="numeric"
+                    class="payment-input-2"
+                    placeholder="•••"
                     maxlength="3"
                     required />
                 </div>
               </section>
             </form>
           </section>
+          <section class="mode-pay">
+            <div class="mode-pay-row">
+              <label class="mode-pay-radio">
+                <input
+                  type="radio"
+                  name="radio-group" />
+                <span class="mode-pay-radio-circle">Apple Pay</span>
+              </label>
+              <span>
+                <img
+                  src="/img/store-2/applepay.png"
+                  alt="apple pay"
+                  class="mode-pay-img" />
+              </span>
+            </div>
+            <p class="mode-pay-text">
+              Unlimited users and unlimited individual data.
+            </p>
+          </section>
+          <section class="mode-pay">
+            <div class="mode-pay-row">
+              <label class="radio-paypal">
+                <input
+                  type="radio"
+                  name="radio-group" />
+                <span class="mode-pay-radio-circle">Paypal</span>
+              </label>
+              <span>
+                <img
+                  src="/img/store-2/paypal.png"
+                  alt="paypal"
+                  class="mode-pay-img" />
+              </span>
+            </div>
+            <p class="mode-pay-text">
+              You will be redirected to the PayPal website after submitting your
+              order
+            </p>
+          </section>
+          <section class="info-disclaimer">
+            <img
+              class="info-disclaimer-img"
+              src="/img/store-2/lock.png"
+              alt="lock icon" />
+            <span class="info-disclaimer-text">
+              We protect your payment information using encryption to provide
+              bank-level security.
+            </span>
+          </section>
         </section>
         <section class="billing-adress-container">
-          <div class="billing-adress-text">
+          <div class="payment-details-text">
             <h3>Billing Address</h3>
             <!--API CALL don't forget-->
           </div>
           <section class="billing-adress-form">
             <form action="/action_page.php">
-              <div>
-                <label for="fname"> First Name</label>
-                <input
-                  type="text"
-                  id="fname"
-                  name="firstname"
-                  placeholder="Max" />
-                <label for="lname"> Last Name</label>
-                <input
-                  type="text"
-                  id="lname"
-                  name="lastname"
-                  placeholder="Luca" />
-              </div>
-              <div>
-                <label for="email"> Email</label>
-                <input
-                  type="text"
-                  id="email"
-                  name="email"
-                  placeholder="max.luca@gmail.com" />
-              </div>
-              <div>
-                <label for="adr">Street Address</label>
-                <input
-                  type="text"
-                  id="adr"
-                  name="address"
-                  placeholder="   " />
-              </div>
-              <div>
-                <label for="state">State/Province</label>
-                <input
-                  type="text"
-                  id="state"
-                  name="state"
-                  placeholder="Los Angeles" />
-                <label for="city"> City</label>
-                <input
-                  type="text"
-                  id="city"
-                  name="city"
-                  placeholder="San Rose" />
-              </div>
-              <div>
-                <label for="zip">Zip/ Postal Code</label>
-                <input
-                  type="text"
-                  id="zip"
-                  name="zip"
-                  placeholder="22341" />
-                <label for="phone">Phone number</label>
-                <input
-                  type="text"
-                  id="phone"
-                  name="phone"
-                  placeholder="+351 000-0000" />
-                <!--DON'T FORGET AREA CODES-->
-              </div>
+              <section class="billing-address-data">
+                <section class="form-section">
+                  <div>
+                    <label
+                      for="fname"
+                      class="radio-circle">
+                      First Name
+                    </label>
+                    <br />
+                    <input
+                      type="text"
+                      id="fname"
+                      name="firstname"
+                      class="short-input"
+                      placeholder="Max" />
+                  </div>
+                  <div>
+                    <label
+                      for="lname"
+                      class="radio-circle">
+                      Last Name
+                    </label>
+                    <br />
+                    <input
+                      type="text"
+                      id="lname"
+                      name="lastname"
+                      class="short-input"
+                      placeholder="Luca" />
+                  </div>
+                </section>
+                <section class="form-section">
+                  <div>
+                    <label
+                      for="email"
+                      class="radio-circle">
+                      Email
+                    </label>
+                    <br />
+                    <input
+                      type="text"
+                      id="email"
+                      class="long-input"
+                      name="email"
+                      placeholder="max.luca@gmail.com" />
+                  </div>
+                </section>
+                <section class="form-section">
+                  <div>
+                    <label
+                      for="adr"
+                      class="radio-circle">
+                      Street Address
+                    </label>
+                    <br />
+                    <input
+                      type="text"
+                      id="adr"
+                      class="long-input"
+                      name="address"
+                      placeholder="   " />
+                  </div>
+                </section>
+                <section class="form-section">
+                  <div>
+                    <label
+                      for="state"
+                      class="radio-circle">
+                      State/Province
+                    </label>
+                    <br />
+                    <input
+                      type="text"
+                      id="state"
+                      name="state"
+                      class="short-input"
+                      placeholder="Los Angeles" />
+                  </div>
+                  <div>
+                    <label
+                      for="city"
+                      class="radio-circle">
+                      City
+                    </label>
+                    <br />
+                    <input
+                      type="text"
+                      id="city"
+                      name="city"
+                      class="short-input"
+                      placeholder="San Rose" />
+                  </div>
+                </section>
+                <section class="form-section">
+                  <div>
+                    <label
+                      for="zip"
+                      class="radio-circle">
+                      Zip/ Postal Code
+                    </label>
+                    <br />
+                    <input
+                      type="text"
+                      id="zip"
+                      name="zip"
+                      class="short-input"
+                      placeholder="22341" />
+                  </div>
+                  <div>
+                    <label
+                      for="phone"
+                      class="radio-circle">
+                      Phone number
+                    </label>
+                    <br />
+                    <input
+                      type="text"
+                      id="phone"
+                      name="phone"
+                      class="short-input"
+                      placeholder="+351 000-0000" />
+                    <!--DON'T FORGET AREA CODES-->
+                  </div>
+                </section>
+              </section>
             </form>
             <div>
               <input
@@ -221,7 +385,9 @@
                 id="samebill"
                 name="samebill"
                 value="sameadress" />
-              <label for="samebill">
+              <label
+                for="samebill"
+                class="info-disclaimer-text">
                 My billing and shipping adress are the same
               </label>
               <br />
@@ -230,7 +396,9 @@
                 id="createaccount"
                 name="createaccount"
                 value="10%discount" />
-              <label for="createaccount">
+              <label
+                for="createaccount"
+                class="info-disclaimer-text">
                 Create an account for 10% off this purchase
               </label>
             </div>
