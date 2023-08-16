@@ -60,9 +60,16 @@
                     <p>Complete license - 1 user - 5GB Cloud Storage</p>    
                 </div>
             </section>
-            <section class="payment"> <!--integrate third-party payment gateways or APIs to handle payment processing securely-->
-                <h4>Payment</h4>
-                <p>Step 3 <span>of 3</span></p>
+            <section class="our-softwares">
+                <div class="our-softwares-text">
+                <span class="our-softwares-h">Select Product</span>
+                <div class="our-softwares-ps">
+                    <span class="our-softwares-p">
+                    Step 2
+                    <span class="our-softwares-p-of"> of 3 </span>
+                    </span>
+                </div>
+                </div>
                 <section class="payment-row">
                     <section class="payment-details-container">
                         <h3>Payment Details</h3>
@@ -119,39 +126,56 @@
                             </div>
                         </form>
                         <div>
-                        <input type="checkbox" id="samebill" name="samebill" value="sameadress">
-                        <label for="samebill"> My billing and shipping adress are the same</label><br>
-                        <input type="checkbox" id="createaccount" name="createaccount" value="10%discount">
-                        <label for="createaccount"> Create an account for 10% off this purchase</label>
+                            <input type="checkbox" id="samebill" name="samebill" value="sameadress">
+                            <label for="samebill"> My billing and shipping adress are the same</label><br>
+                            <input type="checkbox" id="createaccount" name="createaccount" value="10%discount">
+                            <label for="createaccount"> Create an account for 10% off this purchase</label>
                         </div>
                     </section>
                 </section>
-                <section class="btn-buy-out">
-                    <section class="btn-buy-out-row">
-                        <a href="/pages/store.html"><button class="btn-buy-out-back">Back</button></a>
-                        <a href="/pages/store-3.html"><button class="btn-buy-out-complete" id="complete-payment">Buy</button></a>
-                    </section>
-                </section>
-            </section>
+                <section class="btn-buy">
+          <section class="btn-buy-row">
+            <a
+              href="/pages/store.html"
+              class="btn-buy-not-do"
+              ><span class="btn-buy-text">Back</span></a
+            >
+            <a
+              href="/pages/store-3.html"
+              class="btn-buy-do">
+              <span class="btn-buy-text"id="complete-payment">Buy</span>
+            </a>
+          </section>
+        </section>
         </main>
         <footer>
-            <div class="footer-container">
-                <div class="footer-img">
-                    <img
-                    src="/img/horus-logo-footer.png"
-                    alt="Horus logo in gold" />
-                </div>
-                <div class="footer-options">
-                    <span class="footer-option"><a href="#">Software</a></span>
-                    <span class="footer-option"><a href="#">The Scanner</a></span>
-                    <span class="footer-option"><a href="/pages/store.html">Store</a></span>
-                    <span class="footer-option"><a href="#">Appointment</a></span>
-                    <span class="footer-option"><a href="#">Contact</a></span>
-                </div>
-                <div class="footer-rights">
-                    <p>© 2021 Flex. All rights reserved.</p>
-                </div>
+        <div class="footer-container">
+            <div class="footer-img">
+            <img
+                src="/img/horus-logo-footer.png"
+                alt="Horus logo in gold" />
             </div>
-        </footer> 
+            <div class="footer-options">
+            <span class="footer-option">
+                <a href="#">Software</a>
+            </span>
+            <span class="footer-option">
+                <a href="#">The Scanner</a>
+            </span>
+            <span class="footer-option">
+                <a href="/pages/store.html">Store</a>
+            </span>
+            <span class="footer-option">
+                <a href="#">Appointment</a>
+            </span>
+            <span class="footer-option">
+                <a href="#">Contact</a>
+            </span>
+            </div>
+        </div>
+        <div class="footer-rights">
+            <p>© 2021 Flex. All rights reserved.</p>
+        </div>
+        </footer>
     </body>
 </html>
