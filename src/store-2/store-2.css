@@ -242,7 +242,7 @@ header {
 /*Main*/
 
 .our-softwares {
-  margin: 30px 120px 40px 120px;
+  margin: 30px 120px 0px 120px;
 }
 
 .our-softwares-text {
@@ -283,44 +283,24 @@ header {
   color: var(--button);
 }
 
-.payment-row {
-  display: flex;
-  flex-wrap: wrap;
-}
+/*Payment Info*/
 
-.payment-details-container,
-.billing-address-container {
-  flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
+.payment-container {
+  margin: 30px 120px 80px 120px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .payment-details-container {
-  background-color: #f5f5f5;
-}
-
-.billing-address-container {
-  background-color: #fafafa;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-bottom: 6px;
-}
-
-input {
-  padding: 10px;
-  margin-bottom: 12px;
+  flex: 1;
+  padding: 20px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .btn-buy {
-  margin: 80px 0px 80px 0px;
+  margin: 80px 120px 80px 0px;
   text-align: right;
 }
 .btn-buy-do {
