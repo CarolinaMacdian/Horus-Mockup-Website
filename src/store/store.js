@@ -1,12 +1,13 @@
-/** @format */
+/**
+ * Navigation Hamburguer
+ * @format
+ * */
 
 function myFunction() {
-  var menuIcon = document.querySelector('.icon-navbar');
-  var navbarLinks = document.querySelectorAll('.navbar a');
-
-  menuIcon.classList.toggle('active');
-
-  navbarLinks.forEach(function (link) {
-    link.classList.toggle('bold-link');
-  });
+  var x = document.getElementById('horusNavbar');
+  if (x.className === 'navbar') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'navbar';
+  }
 }

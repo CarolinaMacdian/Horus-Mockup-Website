@@ -53,16 +53,37 @@
             src="/img/horus-logo-navbar.png"
             alt="Horus logo" />
         </a>
-        <a href="/index.html">Software</a>
-        <a href="#">The Scanner</a>
-        <a href="/pages/store.html">Store</a>
-        <a href="#">Appointment</a>
-        <a href="#">contact</a>
+        <a
+          href="/index.html"
+          class="option">
+          Software
+        </a>
+        <a
+          href="#"
+          class="option">
+          The Scanner
+        </a>
+        <a
+          href="/pages/store.html"
+          class="option"
+          class="active">
+          Store
+        </a>
+        <a
+          href="#"
+          class="option">
+          Appointment
+        </a>
+        <a
+          href="#"
+          class="option">
+          Contact
+        </a>
         <a
           href="javascript:void(0);"
           class="icon-navbar"
           onclick="myFunction()">
-          <span class="material-symbols-outlined icon-style"> menu </span>
+          <span class="material-symbols-outlined">menu</span>
         </a>
       </nav>
     </header>
@@ -98,105 +119,107 @@
           <div class="payment-details-text">
             <h3>Payment Details</h3>
           </div>
-          <section class="payment-details-form">
-            <div class="payment-details-header">
-              <label class="radio-credit-card">
-                <input
-                  type="radio"
-                  name="radio-group" />
-                <span class="radio-circle">Pay with Credit Card</span>
-              </label>
-              <span>
-                <img
-                  src="/img/store-2/visa.png"
-                  alt="visa credit card"
-                  class="credit-card-img" />
-                <img
-                  src="/img/store-2/stripe.png"
-                  alt="stipe credit card"
-                  class="credit-card-img" />
-                <img
-                  src="/img/store-2/mastercard.png"
-                  alt="mastercard credit card"
-                  class="credit-card-img" />
-              </span>
-            </div>
-            <form
-              action="#"
-              method="post"
-              id="payment-form">
-              <section class="form-section">
-                <div>
-                  <label
-                    for="cc-name"
-                    class="radio-circle">
-                    Name on card
-                  </label>
-                  <br />
+          <div class="form-container">
+            <section class="payment-details-form">
+              <div class="payment-details-header">
+                <label class="radio-credit-card">
                   <input
-                    id="cc-name"
-                    name="cc-name"
-                    autocomplete="cc-name"
-                    class="payment-input-1"
-                    placeholder="Olivia Rhye"
-                    pattern="[\p{L} \-\.]+"
-                    required />
-                </div>
-                <div id="cc-exp-csc">
-                  <label
-                    for="cc-exp"
-                    class="radio-circle">
-                    Expiry
-                  </label>
-                  <br />
-                  <input
-                    id="cc-exp"
-                    name="cc-exp"
-                    autocomplete="cc-exp"
-                    class="payment-input-2"
-                    placeholder="06/2024"
-                    maxlength="7"
-                    required />
-                </div>
-              </section>
-              <section class="form-section">
-                <div>
-                  <label
-                    for="cc-number"
-                    class="radio-circle">
-                    Card number
-                  </label>
-                  <br />
-                  <input
-                    id="cc-number"
-                    name="cc-number"
-                    autocomplete="cc-number"
-                    placeholder="1234 1234 1234 1234"
-                    class="payment-input-1"
-                    inputmode="numeric"
-                    pattern="[\d ]{10,30}"
-                    required />
-                </div>
-                <div>
-                  <label
-                    for="cc-csc"
-                    class="radio-circle">
-                    Security code
-                  </label>
-                  <br />
-                  <input
-                    id="cc-csc"
-                    name="cc-csc"
-                    autocomplete="cc-csc"
-                    inputmode="numeric"
-                    class="payment-input-2"
-                    placeholder="•••"
-                    maxlength="3"
-                    required />
-                </div>
-              </section>
-            </form>
-          </section>
+                    type="radio"
+                    name="radio-group" />
+                  <span class="radio-circle">Pay with Credit Card</span>
+                </label>
+                <span>
+                  <img
+                    src="/img/store-2/visa.png"
+                    alt="visa credit card"
+                    class="credit-card-img" />
+                  <img
+                    src="/img/store-2/stripe.png"
+                    alt="stipe credit card"
+                    class="credit-card-img" />
+                  <img
+                    src="/img/store-2/mastercard.png"
+                    alt="mastercard credit card"
+                    class="credit-card-img" />
+                </span>
+              </div>
+              <form
+                action="#"
+                method="post"
+                id="payment-form">
+                <section class="form-section">
+                  <div>
+                    <label
+                      for="cc-name"
+                      class="radio-circle">
+                      Name on card
+                    </label>
+                    <br />
+                    <input
+                      id="cc-name"
+                      name="cc-name"
+                      autocomplete="cc-name"
+                      class="payment-input-1"
+                      placeholder="Olivia Rhye"
+                      pattern="[\p{L} \-\.]+"
+                      required />
+                  </div>
+                  <div id="cc-exp-csc">
+                    <label
+                      for="cc-exp"
+                      class="radio-circle">
+                      Expiry
+                    </label>
+                    <br />
+                    <input
+                      id="cc-exp"
+                      name="cc-exp"
+                      autocomplete="cc-exp"
+                      class="payment-input-2"
+                      placeholder="06/2024"
+                      maxlength="7"
+                      required />
+                  </div>
+                </section>
+                <section class="form-section">
+                  <div>
+                    <label
+                      for="cc-number"
+                      class="radio-circle">
+                      Card number
+                    </label>
+                    <br />
+                    <input
+                      id="cc-number"
+                      name="cc-number"
+                      autocomplete="cc-number"
+                      placeholder="1234 1234 1234 1234"
+                      class="payment-input-1"
+                      inputmode="numeric"
+                      pattern="[\d ]{10,30}"
+                      required />
+                  </div>
+                  <div>
+                    <label
+                      for="cc-csc"
+                      class="radio-circle">
+                      Security code
+                    </label>
+                    <br />
+                    <input
+                      id="cc-csc"
+                      name="cc-csc"
+                      autocomplete="cc-csc"
+                      inputmode="numeric"
+                      class="payment-input-2"
+                      placeholder="•••"
+                      maxlength="3"
+                      required />
+                  </div>
+                </section>
+              </form>
+            </section>
+          </div>
           <section class="mode-pay">
             <div class="mode-pay-row">
               <label class="mode-pay-radio">
@@ -251,157 +274,159 @@
           <div class="payment-details-text">
             <h3>Billing Address</h3>
           </div>
-          <section class="billing-adress-form">
-            <form action="/action_page.php">
-              <section class="billing-address-data">
-                <section class="form-section">
-                  <div>
-                    <label
-                      for="fname"
-                      class="radio-circle">
-                      First Name
-                    </label>
-                    <br />
-                    <input
-                      type="text"
-                      id="fname"
-                      name="firstname"
-                      class="short-input"
-                      placeholder="Max" />
-                  </div>
-                  <div>
-                    <label
-                      for="lname"
-                      class="radio-circle">
-                      Last Name
-                    </label>
-                    <br />
-                    <input
-                      type="text"
-                      id="lname"
-                      name="lastname"
-                      class="short-input"
-                      placeholder="Luca" />
-                  </div>
+          <div class="form-container">
+            <section class="billing-adress-form">
+              <form action="/action_page.php">
+                <section class="billing-address-data">
+                  <section class="form-section">
+                    <div>
+                      <label
+                        for="fname"
+                        class="radio-circle">
+                        First Name
+                      </label>
+                      <br />
+                      <input
+                        type="text"
+                        id="fname"
+                        name="firstname"
+                        class="short-input"
+                        placeholder="Max" />
+                    </div>
+                    <div>
+                      <label
+                        for="lname"
+                        class="radio-circle">
+                        Last Name
+                      </label>
+                      <br />
+                      <input
+                        type="text"
+                        id="lname"
+                        name="lastname"
+                        class="short-input"
+                        placeholder="Luca" />
+                    </div>
+                  </section>
+                  <section class="form-section">
+                    <div>
+                      <label
+                        for="email"
+                        class="radio-circle">
+                        Email
+                      </label>
+                      <br />
+                      <input
+                        type="text"
+                        id="email"
+                        class="long-input"
+                        name="email"
+                        placeholder="max.luca@gmail.com" />
+                    </div>
+                  </section>
+                  <section class="form-section">
+                    <div>
+                      <label
+                        for="adr"
+                        class="radio-circle">
+                        Street Address
+                      </label>
+                      <br />
+                      <input
+                        type="text"
+                        id="adr"
+                        class="long-input"
+                        name="address"
+                        placeholder="   " />
+                    </div>
+                  </section>
+                  <section class="form-section">
+                    <div>
+                      <label
+                        for="state"
+                        class="radio-circle">
+                        State/Province
+                      </label>
+                      <br />
+                      <input
+                        type="text"
+                        id="state"
+                        name="state"
+                        class="short-input"
+                        placeholder="Los Angeles" />
+                    </div>
+                    <div>
+                      <label
+                        for="city"
+                        class="radio-circle">
+                        City
+                      </label>
+                      <br />
+                      <input
+                        type="text"
+                        id="city"
+                        name="city"
+                        class="short-input"
+                        placeholder="San Rose" />
+                    </div>
+                  </section>
+                  <section class="form-section">
+                    <div>
+                      <label
+                        for="zip"
+                        class="radio-circle">
+                        Zip/ Postal Code
+                      </label>
+                      <br />
+                      <input
+                        type="text"
+                        id="zip"
+                        name="zip"
+                        class="short-input"
+                        placeholder="22341" />
+                    </div>
+                    <div>
+                      <label
+                        for="phone"
+                        class="radio-circle">
+                        Phone number
+                      </label>
+                      <br />
+                      <input
+                        type="text"
+                        id="phone"
+                        name="phone"
+                        class="short-input"
+                        placeholder="+351 000-0000" />
+                    </div>
+                  </section>
                 </section>
-                <section class="form-section">
-                  <div>
-                    <label
-                      for="email"
-                      class="radio-circle">
-                      Email
-                    </label>
-                    <br />
-                    <input
-                      type="text"
-                      id="email"
-                      class="long-input"
-                      name="email"
-                      placeholder="max.luca@gmail.com" />
-                  </div>
-                </section>
-                <section class="form-section">
-                  <div>
-                    <label
-                      for="adr"
-                      class="radio-circle">
-                      Street Address
-                    </label>
-                    <br />
-                    <input
-                      type="text"
-                      id="adr"
-                      class="long-input"
-                      name="address"
-                      placeholder="   " />
-                  </div>
-                </section>
-                <section class="form-section">
-                  <div>
-                    <label
-                      for="state"
-                      class="radio-circle">
-                      State/Province
-                    </label>
-                    <br />
-                    <input
-                      type="text"
-                      id="state"
-                      name="state"
-                      class="short-input"
-                      placeholder="Los Angeles" />
-                  </div>
-                  <div>
-                    <label
-                      for="city"
-                      class="radio-circle">
-                      City
-                    </label>
-                    <br />
-                    <input
-                      type="text"
-                      id="city"
-                      name="city"
-                      class="short-input"
-                      placeholder="San Rose" />
-                  </div>
-                </section>
-                <section class="form-section">
-                  <div>
-                    <label
-                      for="zip"
-                      class="radio-circle">
-                      Zip/ Postal Code
-                    </label>
-                    <br />
-                    <input
-                      type="text"
-                      id="zip"
-                      name="zip"
-                      class="short-input"
-                      placeholder="22341" />
-                  </div>
-                  <div>
-                    <label
-                      for="phone"
-                      class="radio-circle">
-                      Phone number
-                    </label>
-                    <br />
-                    <input
-                      type="text"
-                      id="phone"
-                      name="phone"
-                      class="short-input"
-                      placeholder="+351 000-0000" />
-                  </div>
-                </section>
-              </section>
-            </form>
-            <div>
-              <input
-                type="checkbox"
-                id="samebill"
-                name="samebill"
-                value="sameadress" />
-              <label
-                for="samebill"
-                class="info-disclaimer-text">
-                My billing and shipping adress are the same
-              </label>
-              <br />
-              <input
-                type="checkbox"
-                id="createaccount"
-                name="createaccount"
-                value="10%discount" />
-              <label
-                for="createaccount"
-                class="info-disclaimer-text">
-                Create an account for 10% off this purchase
-              </label>
-            </div>
-          </section>
+              </form>
+              <div>
+                <input
+                  type="checkbox"
+                  id="samebill"
+                  name="samebill"
+                  value="sameadress" />
+                <label
+                  for="samebill"
+                  class="info-disclaimer-text">
+                  My billing and shipping adress are the same
+                </label>
+                <br />
+                <input
+                  type="checkbox"
+                  id="createaccount"
+                  name="createaccount"
+                  value="10%discount" />
+                <label
+                  for="createaccount"
+                  class="info-disclaimer-text">
+                  Create an account for 10% off this purchase
+                </label>
+              </div>
+            </section>
+          </div>
         </section>
       </section>
       <section class="btn-buy">
