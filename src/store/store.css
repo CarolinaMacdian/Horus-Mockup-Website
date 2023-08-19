@@ -283,7 +283,7 @@ header {
 }
 
 .our-softwares-row:last-child .our-softwares-container-4 {
-  flex: 0 0 calc(22% - 20px);
+  flex: 0 0 calc(25% - 20px);
 }
 
 .icon-style {
@@ -683,11 +683,27 @@ header {
 
   .btn {
     width: 50%;
-    margin: 50px 120px;
+    margin: 50px 90px;
   }
 
   .arrows {
     display: none;
+  }
+
+  .our-softwares {
+    margin: 30px 20px 40px 20px;
+  }
+
+  .our-softwares-btn {
+    width: 85px;
+    height: 46px;
+    padding: 16px 10px 16px 10px;
+    margin: 2px;
+  }
+
+  .our-softwares-btn-text {
+    font-size: 14px;
+    line-height: 14px;
   }
 
   .our-softwares-container,
@@ -696,6 +712,7 @@ header {
   .our-softwares-container-2,
   .our-softwares-container-4 {
     width: 100%;
+    min-width: max-content;
     margin-right: 0;
     margin-bottom: 20px;
   }
@@ -712,6 +729,42 @@ header {
     text-align: center;
   }
 
+  .product {
+    min-width: max-content;
+    align-items: left;
+  }
+
+  .responsive-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-buy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-buy-do,
+  .btn-buy-not-do {
+    margin: 10px 0px 10px 0px;
+    width: 94px;
+    height: 34px;
+    padding: 10px 20px 10px 20px;
+  }
+
+  .btn-buy-text {
+    font-size: 14px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+
   .footer-img {
     margin-bottom: 10px;
   }
@@ -722,7 +775,8 @@ header {
   }
 
   .footer-option {
-    display: block;
-    margin: 5px 0;
+    display: flex;
+    margin: 5px 5px;
+    font-size: 10px;
   }
 }
